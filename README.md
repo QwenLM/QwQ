@@ -96,7 +96,7 @@ To achieve optimal performance, we recommend the following settings:
         }
     }
     ```
-    For deployment, we recommend using vLLM. Please refer to our [Documentation](https://qwen.readthedocs.io/en/latest/deployment/vllm.html) for usage if you are not familar with vLLM.
+    For deployment, we recommend using vLLM. Please refer to our [Documentation](https://qwen.readthedocs.io/en/latest/deployment/vllm.html) for usage if you are not familiar with vLLM.
     Presently, vLLM only supports static YARN, which means the scaling factor remains constant regardless of input length, **potentially impacting performance on shorter texts**. 
     We advise adding the `rope_scaling` configuration only when processing long contexts is required.
 
