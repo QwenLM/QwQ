@@ -60,7 +60,7 @@ def main():
         print(f"Found {total_completed} completed samples from previous run")
     else:
         with open(args.output_file, 'w', encoding='utf-8') as g:
-            pass
+            completed_counts = dict()
 
     expanded_data = []
     for item in data:
